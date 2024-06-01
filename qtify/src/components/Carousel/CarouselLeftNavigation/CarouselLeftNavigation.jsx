@@ -16,9 +16,14 @@ const CarouselLeftNavigation = () => {
   },[])
 
   return(
-    <button className={styles.leftNavigation}>
+    <div style={{ position :  "absolute",
+        left : "0px",
+        top: "40%",
+        transform: "translateY(-50%)",
+        zIndex: "10",
+        cursor: "pointer"}}>
         {!isBeginning && <LeftArrow onClick={()=> swiper.slidePrev()}/>}
-    </button>
+    </div>
   );
 }
 

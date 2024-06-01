@@ -14,9 +14,14 @@ const CarouselRightNavigation = () => {
         });
     },[])
   return (
-    <button className={styles.rightNavigation}>
+    <div style={{    cursor: "pointer",
+      position: "absolute",
+      right: "10px",
+      top:"40%",
+      transform: "translateY(-50%)",
+      zIndex: "10"}}>
         {!isEnd && <RightArrow onClick={() => swiper.slideNext()}/>}
-    </button>
+    </div>
   )
 }
 
