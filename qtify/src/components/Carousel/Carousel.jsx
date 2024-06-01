@@ -20,13 +20,13 @@ const Controls =({data}) =>{
 
 const Carousel = ({ data, renderComponent }) => {
   return (
-    <div className={styles.wrapper}>
+    // <div className={styles.wrapper}>
       <Swiper
         style={{padding:"0px 0px"}}
         initialSlide={0}
         modules={{ Navigation }}
         slidesPerView={"auto"}
-        spaceBetween={"0"}
+        spaceBetween={"5"}
         allowTouchMove
       >
         <Controls data={data}/>
@@ -36,7 +36,7 @@ const Carousel = ({ data, renderComponent }) => {
           <SwiperSlide key={item?.id} className={styles.swiperSlide}>{renderComponent(item)}</SwiperSlide>
         ))}
       </Swiper>
-     </div>
+    //  </div>
   );
 };
 
