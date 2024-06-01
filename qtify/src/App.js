@@ -12,7 +12,7 @@ function App() {
 
   const generateData = (key,source) => {
     source().then((data)=>{
-      console.log(data);
+      // console.log(data);
       setData((prevState)=>{
         return {...prevState, [key]:data}
       })

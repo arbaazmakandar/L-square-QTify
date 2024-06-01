@@ -11,6 +11,8 @@ import Chip from '@mui/material/Chip';
 
 const CardComponent = ({data, type}) => {
 
+  console.log(data);
+
   switch(type){
 
     case "album":{

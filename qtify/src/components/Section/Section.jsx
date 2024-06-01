@@ -62,14 +62,19 @@ const Section = ({title, data, filterSource, type}) => {
       <div className={styles.cardsWrapper}>
         {!carouselToggle ? (
           <div className={styles.wrapper}>
-            {cardsToRender.map((ele) => {
-              <CardComponent data ={ele} type = {type} />
-            })}
+            {
+            
+            cardsToRender.map((ele) => 
+              (<CardComponent data ={ele} type = {type} />)
+             
+            )
+            
+            }
           </div>
           ) : (
             <Carousel
               data={cardsToRender}
-              renderComponent ={(data)=><CardComponent data={data} type={type}/>}
+              renderComponent ={(data)=>(<CardComponent data={data} type={type}/>)}
             />
           )}
       </div>
