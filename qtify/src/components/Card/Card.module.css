@@ -1,0 +1,48 @@
+.card{
+    background-color: var(--color-black);
+    width: 160px;  /*160*/
+    height: 230px;   /*205*/
+    margin: 20px;
+    color: var(--color-white);
+    /* padding-top: 10px; */
+    position: relative;
+    display: block;
+
+}
+
+.cardContent{
+    background-color: var(--color-white); 
+    height : 35px;
+    position: relative;
+    /* display: flex; 
+    flex-direction: column;
+    align-items:center; */
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+.chip{
+    position: absolute;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    /* width: 71px;*/
+    height: 23px;
+    top: 7px;
+    left: 5px; 
+    /* padding: 4px 8px 4px 8px;
+    gap: 1px;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0px; */
+
+}
+
+.bottomText{
+    position: absolute;
+    bottom: 0px;
+    color: var(--color-white);
+}
+
+.image{
+    background-size:"cover"
+
+}

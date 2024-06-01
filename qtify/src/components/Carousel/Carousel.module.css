@@ -1,0 +1,9 @@
+
+.wrapper{
+    position: relative;
+    padding: 10px;
+}
+
+.swiperSlide{
+    width: fit-content !important;
+}

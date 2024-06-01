@@ -1,20 +1,21 @@
 .outerBox{
     width: 100vw;
-    padding: 120px 80px 80px 80px;
+
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--color-black);
-
+    gap:40px
 }
 
 .text{
-    width: 80%;
+    /* width: 80%; */
     font-weight: bold;
     text-align: center;
     
 }
 
 .image{
-    width: 20%;
+    /* width: 20%; */
 }
