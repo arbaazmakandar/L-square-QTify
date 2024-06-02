@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import styles from './Filters.modules.css';
+import React from "react";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import styles from "./Filters.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -25,8 +25,11 @@ function TabPanel(props) {
   );
 }
 
-export default function Filters({filters,selectedFilterIndex,setSelectedFilterIndex}) {
-  
+export default function Filters({
+  filters,
+  selectedFilterIndex,
+  setSelectedFilterIndex,
+}) {
   const handleChange = (event, newValue) => {
     setSelectedFilterIndex(newValue);
   };
@@ -34,30 +37,35 @@ export default function Filters({filters,selectedFilterIndex,setSelectedFilterIn
   function a11yProps(index) {
     return {
       id: `simple-tab-${index}`,
-      'aria-controls': `simple-tabpanel-${index}`,
+      "aria-controls": `simple-tabpanel-${index}`,
     };
   }
 
   return (
     <div>
-        <Tabs 
-        value={selectedFilterIndex} 
-        onChange={handleChange} 
+      <Tabs
+        value={selectedFilterIndex}
+        onChange={handleChange}
         aria-label="basic tabs example"
-        TabIndicatorProps = {{
-            style:{
-                backgroundColor : "var(--color-primary)",
-            },
+        TabIndicatorProps={{
+          style: {
+            backgroundColor: "var(--color-primary)",
+          },
         }}
-        >
-            {filters.map((ele, idx) => (
-              <Tab key={idx} className={styles.tab} label={ele.label} {...a11yProps(0)} />
-            ))}
-            </Tabs>
+      >
+        {filters.map((ele, idx) => (
+          <Tab
+            key={idx}
+            className={styles.tab}
+            label={ele.label}
+            {...a11yProps(0)}
+          />
+        ))}
+      </Tabs>
 
-            {filters.map((ele, idx) => (
-             <TabPanel key={idx} value={ele.label} index={idx} />
-            ))}
-        </div>
+      {filters.map((ele, idx) => (
+        <TabPanel key={idx} value={ele.label} index={idx} />
+      ))}
+    </div>
   );
 }

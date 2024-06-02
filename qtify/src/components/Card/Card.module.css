@@ -1,7 +1,7 @@
 .card{
     background-color: var(--color-black);
     width: 160px;  /*160*/
-    height: 230px;   /*205*/
+    height: 245px;   /*205*/
     margin: 20px;
     color: var(--color-white);
     /* padding-top: 10px; */
@@ -38,7 +38,7 @@
 
 .bottomText{
     position: absolute;
-    bottom: 0px;
+    top: 210px;
     color: var(--color-white);
 }
 
