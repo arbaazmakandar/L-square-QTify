@@ -16,7 +16,7 @@ const CarouselLeftNavigation = () => {
 
   return(
     <LeftArrow style={{ position :  "absolute",
-        left : "40px",
+        left : "80px",
         top: "40%",
         // transform: "translateY(-50%)",
         zIndex: "10",
