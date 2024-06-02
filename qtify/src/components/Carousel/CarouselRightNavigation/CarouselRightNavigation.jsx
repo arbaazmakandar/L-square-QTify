@@ -15,7 +15,7 @@ const CarouselRightNavigation = () => {
   return (
     <RightArrow style={{    cursor: "pointer",
       position: "absolute",
-      right: "80px",
+      right: "150px",
       top:"40%",
       // transform: "translateY(-50%)",
       zIndex: "10"}} onClick={() => swiper.slideNext()}/>
