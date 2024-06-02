@@ -11,7 +11,7 @@ import Chip from '@mui/material/Chip';
 
 const CardComponent = ({data, type}) => {
 
-  console.log(data);
+  // console.log(data);
 
   switch(type){
 

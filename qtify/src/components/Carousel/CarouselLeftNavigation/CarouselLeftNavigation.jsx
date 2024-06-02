@@ -16,9 +16,9 @@ const CarouselLeftNavigation = () => {
 
   return(
     <LeftArrow style={{ position :  "absolute",
-        left : "20px",
-        top: "40%",
-        transform: "translateY(-50%)",
+        left : "25px",
+        top: "45%",
+        // transform: "translateY(-50%)",
         zIndex: "10",
         cursor: "pointer"}} onClick={()=> swiper.slidePrev()}/>
 
